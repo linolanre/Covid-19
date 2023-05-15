@@ -55,4 +55,5 @@ y_pred = regressor.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 print('Mean Squared Error:', mse)
 
-
+import joblib 
+joblib.dump(regressor, 'reg.pkl')
